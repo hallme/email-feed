@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Email Feed ===
 Contributors: matt-h-1
 Tags: rss, emails
 Requires at least: 3.0
