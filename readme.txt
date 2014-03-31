@@ -3,7 +3,7 @@ Contributors: matt-h-1
 Tags: rss, emails
 Requires at least: 3.0
 Tested up to: 3.8.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,10 +29,16 @@ Find your current RSS feed. This is usually something like /feed/ or /blog/feed/
 
 == Changelog ==
 
+= 1.0.1 =
+* Fix bug with the regex if the image is folled by an a tag instead of wrapped in an a tag
+
 = 1.0 =
 * Initial Release
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+* Fix bug with the regex if the image is folled by an a tag instead of wrapped in an a tag
 
 = 1.0 =
 * Initial Release
