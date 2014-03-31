@@ -1,5 +1,5 @@
 === Email Feed ===
-Contributors: matt-h-1
+Contributors: hallme
 Tags: rss, emails
 Requires at least: 3.0
 Tested up to: 3.8.1
