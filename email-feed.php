@@ -118,7 +118,7 @@ class EmailFeed {
 
 	public function process_content($str) {
 		if(strpos($str, '<img') !== false) {
-			preg_match_all('|(<a.*?)?<img.*?>(.*?/a>)?|', $str, $matches);
+			preg_match_all('|(<a.*?>)?<img.*?>(</a>)?|', $str, $matches);
 			if(!empty($matches[0])) {
 				foreach($matches[0] as $match) {
 					if(strpos($match, 'alignright') !== false) {
