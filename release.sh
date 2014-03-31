@@ -14,23 +14,28 @@ echo "Releasing version ${version}"
 
 echo "Setting version number in readme.txt"
 sed -i "s/Stable tag: .*/Stable tag: ${version}/" readme.txt
+sed -i "s/Version:           .*/Version:           ${version}/" ${package}.php
+sed -i "s/const VERSION = '.*';/const VERSION = '${version}';/" ${package}.php
 
-if [[ $(git diff | grep readme.txt) ]]; then
+if ([[ $(git st | grep readme.txt) ]] || [[ $(git st | grep ${package}.php) ]]); then
 	echo "Committing changes"
 	git add readme.txt
+	git add ${package}.php
 	git commit -m"Update readme with new stable tag $version"
 fi
 
 echo "Tagging locally"
 git tag $version
 
-echo "Pushing tag"
+echo "Pushing tag to git"
 git push --tags origin master
 
-echo "Commiting to Wordpress SVN the latest version"
+echo "Commiting version ${version} to Wordpress SVN"
+svn up
 svn commit -m"Releasing version ${version}"
 
-echo "Creating SVN tag for latest version"
-svn copy http://plugins.svn.wordpress.org/${package}/trunk http://plugins.svn.wordpress.org/$package/tags/${version}
+echo "Creating version ${version} SVN tag"
+svn up
+svn copy http://plugins.svn.wordpress.org/${package}/trunk http://plugins.svn.wordpress.org/$package/tags/${version} -m"Creating new ${version} tag"
 
 echo "Done"
