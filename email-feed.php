@@ -32,15 +32,6 @@ if ( ! defined( 'WPINC' ) ) {
 class EmailFeed {
 
 	/**
-	 * Plugin version, used for cache-busting of style and script file references.
-	 *
-	 * @since   1.0.0
-	 *
-	 * @var     string
-	 */
-	const VERSION = '1.0.1';
-
-	/**
 	 *
 	 * The variable name is used as the text domain when internationalizing strings
 	 * of text. Its value should match the Text Domain file header in the main
