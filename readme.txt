@@ -29,16 +29,11 @@ Find your current RSS feed. This is usually something like /feed/ or /blog/feed/
 
 == Changelog ==
 
-= 1.0.1 =
-* Fix bug with the regex if the image is folled by an a tag instead of wrapped in an a tag
-
-= 1.0 =
-* Initial Release
-
-== Upgrade Notice ==
+= 1.1.0 =
+* Change to use WordPress RSS file as an include so it stays up to date with the current WordPress version.
 
 = 1.0.1 =
-* Fix bug with the regex if the image is folled by an a tag instead of wrapped in an a tag
+* Fix bug with the regex if the image is followed by an a tag instead of wrapped in an a tag
 
 = 1.0 =
 * Initial Release

@@ -17,7 +17,7 @@
  * Description:       Creates a second feed at /emailfeed/ instead of /feed/ which is formatted to be used in emails
  * Version:           1.0.1
  * Author:            Hall Internet Marketing
- * Author URI:        http://www.hallme.com/
+ * Author URI:        https://www.hallme.com/
  * Text Domain:       emailfeed
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
