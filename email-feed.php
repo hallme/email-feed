@@ -15,7 +15,7 @@
  * Plugin Name:       Email Feed
  * Plugin URI:        https://github.com/hallme/email-feed
  * Description:       Creates a second feed at /emailfeed/ instead of /feed/ which is formatted to be used in emails
- * Version:           1.0.1
+ * Version:           1.1.0
  * Author:            Hall Internet Marketing
  * Author URI:        https://www.hallme.com/
  * Text Domain:       emailfeed
